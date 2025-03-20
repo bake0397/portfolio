@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --bs-primary: #CBE7FE;
+    --bs-primary-rgb: 203, 231, 254;
+    --bs-secondary: #5175ED;
+    --bs-secondary-rgb: 81, 117, 237;
+}
+
+html {
+    font-family: "Mitr", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 25%;
+} 
+
+.logo-foot {
+    width: 10%;
+}
+
+a {
+    text-decoration: none;
+}
