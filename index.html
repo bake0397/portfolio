@@ -46,46 +46,75 @@
 
     <!-- Main -->
     <main>
-        <div class="container-fluid bg-info p-5">
-            <div>
+        <div class="container-fluid bg-info">
+            <div class="hero-bg">
                 <picture class="hero">
+                    <!-- Mobile MAX: 576px -->
+                    <source srcset="./images/hero/hero-300x.jpg,
+                    ./images/hero/hero-600x.jpg 2x,
+                    ./images/hero/hero-900x.jpg 3x" 
+                    media="(max-width: 576px)">
+
+                    <!-- Tablet MAX: 768px -->
+                    <source srcset="./images/hero/hero-450x.jpg,
+                    ./images/hero/hero-900x.jpg 2x,
+                    ./images/hero/hero-1350x.jpg 3x" 
+                    media="(max-width: 768px)">
+
+                    <!-- Desktop MIN: 992px -->
+                    <source srcset="./images/hero/hero-735x.jpg,
+                    ./images/hero/hero-1470x.jpg 2x,
+                    ./images/hero/hero-2205x.jpg 3x" 
+                    media="(min-width: 992px)">
+
+                    <!-- Desktop MIN: 1200px -->
+                    <source srcset="./images/hero/hero-735x.jpg,
+                    ./images/hero/hero-1800x.jpg 2x,
+                    ./images/hero/hero-2700x.jpg 3x" 
+                    media="(min-width: 1200px)">
+
                     <!-- Desktop MIN: 1600px -->
-                    <source srcset="./images/hero/header-hero-1200x.jpg,
+                    <!-- <source srcset="./images/hero/header-hero-1200x.jpg,
                     ./images/hero/header-hero-2400x.jpg 2x,
                     ./images/hero/header-hero-3600x.jpg 3x" 
-                    media="(min-width: 1600px)">
+                    media="(min-width: 1600px)"> -->
             
                     <!-- Tablet MIN: 1280px -->
-                    <source srcset="./images/hero/header-hero-1024x.jpg,
+                    <!-- <source srcset="./images/hero/header-hero-1024x.jpg,
                     ./images/hero/header-hero-2048x.jpg 2x,
                     ./images/hero/header-hero-3072x.jpg 3x" 
-                    media="(min-width: 1280px)">
+                    media="(min-width: 1280px)"> -->
             
                     <!-- MIN: 960px -->
-                    <source srcset="./images/hero/header-hero-800x.jpg,
+                    <!-- <source srcset="./images/hero/header-hero-800x.jpg,
                     ./images/hero/header-hero-1600x.jpg 2x,
                     ./images/hero/header-hero-2400x.jpg 3x" 
-                    media="(min-width: 960px)">
+                    media="(min-width: 960px)"> -->
             
                     <!-- Mobile MAX: 959px -->
-                    <source srcset="./images/hero/header-hero-600x.jpg,
+                    <!-- <source srcset="./images/hero/header-hero-600x.jpg,
                     ./images/hero/header-hero-1200x.jpg 2x,
                     ./images/hero/header-hero-1800x.jpg 3x" 
-                    media="(max-width: 959px)">
+                    media="(max-width: 959px)"> -->
             
-                    <source srcset="./images/hero/header-hero-480x.jpg,
+                    <!-- <source srcset="./images/hero/header-hero-480x.jpg,
                     ./images/hero/header-hero-960x.jpg 2x,
                     ./images/hero/header-hero-1440x.jpg 3x" 
-                    media="(max-width: 720px)">
+                    media="(max-width: 720px)"> -->
             
-                    <source srcset="./images/hero/header-hero-320x.jpg,
+                    <!-- <source srcset="./images/hero/header-hero-320x.jpg,
                     ./images/hero/header-hero-640x.jpg 2x,
                     ./images/hero/header-hero-960x.jpg 3x" 
-                    media="(max-width: 480px)">
+                    media="(max-width: 480px)"> -->
             
                     <!-- Default Fallback Image -->
-                    <img class="img-fluid p-5" src="./images/hero/header-hero.jpg" alt="Hero banner" role="img">
+                    <img class="img-fluid" src="./images/hero/header-hero.jpg" alt="Hero banner" role="img">
                 </picture>
+                <!-- <div class="">
+                    <svg width="320" height="130" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="300" height="900" x="100" y="-500" style="fill:rgb(81, 117, 237)" />
+                    </svg>
+                </div> -->
             </div>
         </div>
 
@@ -93,7 +122,7 @@
             <div class="container-fluid bg-primary">
                 <h1 class="h1">Package Deals</h1>
                 <div>
-                    
+
                 </div>
             </div>
 

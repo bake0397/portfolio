@@ -35,3 +35,47 @@ a {
     display: flex;
     min-width: 800px;
 } */
+
+.hero {
+    max-width: 735px;
+    height: auto;
+    display: block; /* Removes extra spacing under the image */
+    object-fit: contain; /* Keeps proportions */
+}
+
+/* .hero-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 735px;
+    margin: auto;
+} */
+
+.hero-bg {
+    /* position: absolute; */
+    width: 50%; /* Slightly bigger than the image */
+    height: 70%;
+    background-color: #007bff; /* Blue */
+    z-index: -1; /* Sends it behind the image */
+    top: 40px; /* Adjust vertical offset */
+    left: -5%; /* Slight horizontal offset */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        max-width: 45%; /* Scale down smoothly instead of switching hard */
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        max-width: 45%; /* Prevents it from being too large */
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        max-width: 45%; /* Fine-tunes for large desktops */
+    }
+}
