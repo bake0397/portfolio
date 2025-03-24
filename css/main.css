@@ -5,6 +5,10 @@
     --bs-primary-rgb: 203, 231, 254;
     --bs-secondary: #5175ED;
     --bs-secondary-rgb: 81, 117, 237;
+    --bs-success: #CBE77E;
+    --bs-success-rgb: 203, 231, 126;
+    --bs-info: #F1E9E2;
+    --bs-info-rgb: 241, 233, 226;
 }
 
 html {
@@ -13,7 +17,6 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
-
 
 
 .logo {
@@ -27,3 +30,8 @@ html {
 a {
     text-decoration: none;
 }
+
+/* .hero {
+    display: flex;
+    min-width: 800px;
+} */

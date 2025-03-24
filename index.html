@@ -24,16 +24,19 @@
         </div>
 
         <nav class="navbar-expand-lg">
-            <div class="container-fluid bg-primary">
+            <div class="container-fluid bg-success">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active text-secondary" href="#home">Home</a>
+                        <a class="nav-link active text-black" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="about.html">About Us</a>
+                        <a class="nav-link text-black" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-secondary" href="contact.html">Contact</a>
+                        <a class="nav-link text-black" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -43,14 +46,65 @@
 
     <!-- Main -->
     <main>
-        <div>
-            <br>
+        <div class="container-fluid bg-info p-5">
+            <div>
+                <picture class="hero">
+                    <!-- Desktop MIN: 1600px -->
+                    <source srcset="./images/hero/header-hero-1200x.jpg,
+                    ./images/hero/header-hero-2400x.jpg 2x,
+                    ./images/hero/header-hero-3600x.jpg 3x" 
+                    media="(min-width: 1600px)">
+            
+                    <!-- Tablet MIN: 1280px -->
+                    <source srcset="./images/hero/header-hero-1024x.jpg,
+                    ./images/hero/header-hero-2048x.jpg 2x,
+                    ./images/hero/header-hero-3072x.jpg 3x" 
+                    media="(min-width: 1280px)">
+            
+                    <!-- MIN: 960px -->
+                    <source srcset="./images/hero/header-hero-800x.jpg,
+                    ./images/hero/header-hero-1600x.jpg 2x,
+                    ./images/hero/header-hero-2400x.jpg 3x" 
+                    media="(min-width: 960px)">
+            
+                    <!-- Mobile MAX: 959px -->
+                    <source srcset="./images/hero/header-hero-600x.jpg,
+                    ./images/hero/header-hero-1200x.jpg 2x,
+                    ./images/hero/header-hero-1800x.jpg 3x" 
+                    media="(max-width: 959px)">
+            
+                    <source srcset="./images/hero/header-hero-480x.jpg,
+                    ./images/hero/header-hero-960x.jpg 2x,
+                    ./images/hero/header-hero-1440x.jpg 3x" 
+                    media="(max-width: 720px)">
+            
+                    <source srcset="./images/hero/header-hero-320x.jpg,
+                    ./images/hero/header-hero-640x.jpg 2x,
+                    ./images/hero/header-hero-960x.jpg 3x" 
+                    media="(max-width: 480px)">
+            
+                    <!-- Default Fallback Image -->
+                    <img class="img-fluid p-5" src="./images/hero/header-hero.jpg" alt="Hero banner" role="img">
+                </picture>
+            </div>
         </div>
+
+        <section class="packages">
+            <div class="container-fluid bg-primary">
+                <h1 class="h1">Package Deals</h1>
+                <div>
+                    
+                </div>
+            </div>
+
+
+        </section>
+
     </main>
     <!-- Main Closing -->
 
     <!-- Footer -->
-    <footer class="bg-primary text-secondary text-center">
+    <footer class="bg-success text-black text-center border-top border-secondary border-5">
         <img src="./images/logo-header.svg" class="logo-foot pt-3" alt="">
         <hr>
         <div class="social">
