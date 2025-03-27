@@ -13,6 +13,6 @@
 //     })
 // )
 
-function toggleMobileMenu(menu) {
-    menu.classList.toggle('open');
-}
+// function toggleMobileMenu(menu) {
+//     menu.classList.toggle('open');
+// }
