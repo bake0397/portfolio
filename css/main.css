@@ -84,16 +84,15 @@ body {
 .header .navbar li a:hover {
     /* letter-spacing: 4px; */
     /* border-bottom: 3px solid #ffffff; */
-    letter-spacing: 5px;
-    opacity: 1;
+    letter-spacing: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    /* display: inline-block; */
 }
 
 
-  
-
-  
-
-  
 .header .logo-head img {
     display: flex;
     float: left;
@@ -142,7 +141,7 @@ body {
 /* menu icon */
   
 .header .menu-icon {
-    cursor: pointer;
+    /* cursor: pointer; */
     display: inline-block;
     float: right;
     padding: 28px 20px;
