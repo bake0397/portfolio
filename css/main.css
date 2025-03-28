@@ -612,9 +612,9 @@ a {
 /* ****** CONTACT PAGE STYLES ****** */
 
 .banner {
-    background-image: url('images/contact-bg.jpg'); 
+    background-image: url("../images/contact-bg.jpg"); 
     position: absolute;
-    margin-top: 7rem;
+    margin-top: 2.8rem;
 
 
 }
