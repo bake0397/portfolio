@@ -39,111 +39,187 @@
 
     <!-- Main -->
     <main>
-        <section class="home-banner-section">
-            <div class="home-banner container-xl row">
+        <section class="banner-section">
+            <div class="home-banner">
                 <!-- <h1 class="home-heading h1 col">Where Creativity Warps Reality</h1> -->
-                <h1 class="home-heading h1 col" role="heading" aria-level="1" aria-label="Where Creativity Warps Reality">
-                    <span class="d-block">Where</span>
-                    <span class="d-block">Creativity Warps</span>
-                    <span class="d-block">Reality</span>
-                </h1>
-
-                <div class="hero-container">
-
-                </div>
-                <picture class="hero">
-                    <!-- Mobile MAX: 576px -->
-                    <source srcset="./images/hero/hero-300x.jpg,
-                                                            ./images/hero/hero-600x.jpg 2x,
-                                                            ./images/hero/hero-900x.jpg 3x" media="(max-width: 576px)">
-            
-                    <!-- Tablet MAX: 768px -->
-                    <source srcset="./images/hero/hero-450x.jpg,
-                                                            ./images/hero/hero-900x.jpg 2x,
-                                                            ./images/hero/hero-1350x.jpg 3x" media="(max-width: 768px)">
-            
-                    <!-- Desktop MIN: 992px -->
-                    <source srcset="./images/hero/hero-735x.jpg,
-                                                            ./images/hero/hero-1470x.jpg 2x,
-                                                            ./images/hero/hero-2205x.jpg 3x" media="(min-width: 992px)">
-            
-                    <!-- Desktop MIN: 1200px -->
-                    <source srcset="./images/hero/hero-735x.jpg,
-                                                            ./images/hero/hero-1800x.jpg 2x,
-                                                            ./images/hero/hero-2700x.jpg 3x" media="(min-width: 1200px)">
-                    <!-- Default Fallback Image -->
-                    <img class="img-fluid col" src="./images/hero/header-hero.jpg" alt="Hero banner" role="img">
-                </picture>
-            
-                <!-- DECORATIVE SVG -->
-                <div class="cursor-decor col">
-                    <svg id="cursor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        viewBox="0 0 62 73" width="50px" height="auto" viewBox="0 0 62 73" preserveAspectRatio="xMidYMid meet">
-                        <defs>
-                            <mask id="mask" x=".2" y=".5" width="61.7" height="71.9" maskUnits="userSpaceOnUse">
-                                <g id="mask0_2553_6910">
-                                    <path class="st9" d="M.2,8.8L50.4.5l11.5,63.7-50.2,8.2L.2,8.8Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-1" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
-                                <g id="mask1_2553_6910">
-                                    <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-2" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
-                                <g id="mask2_2553_6910">
-                                    <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-3" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
-                                <g id="mask3_2553_6910">
-                                    <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-4" x="5.8" y="7.1" width="51" height="61.7" maskUnits="userSpaceOnUse">
-                                <g id="mask4_2553_6910">
-                                    <path class="st9" d="M5.8,13.8l41.1-6.7,9.9,55-41.1,6.7L5.8,13.8Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-5" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
-                                <g id="mask5_2553_6910">
-                                    <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-6" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
-                                <g id="mask6_2553_6910">
-                                    <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
-                                </g>
-                            </mask>
-                            <mask id="mask-7" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
-                                <g id="mask7_2553_6910">
-                                    <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
-                                </g>
-                            </mask>
-                        </defs>
-                        <g class="st0">
-                            <g class="st7">
-                                <g class="st1">
-                                    <g class="st2">
-                                        <path class="st8"
-                                            d="M.8,9.3l19.2,52.2,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1-3.3,1.1L6.4,14.3l3.3-1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1ZM9.7,13.2l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM14.1,15.2l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM18.5,17.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM22.9,19.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM27.3,21.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM31.7,23.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM36.1,25l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM40.5,27l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM44.9,29l1.1,3.1-9.8,3.3,3.4,9.2,3.3-1.1-2.3-6.1,13.1-4.4-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1ZM42.9,43.4l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM48.4,48.5l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM54,53.5l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM56.2,59.7l-6.6,2.2,1.1,3.1,6.6-2.2-1.1-3.1ZM49.7,61.9l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM44.1,56.8l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM38.6,51.8l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM33.1,46.7l-2.3-6.1-3.3,1.1,1.1,3.1-3.3,1.1,1.1,3.1,6.6-2.2ZM26.5,48.9l-3.3,1.1,1.1,3.1,3.3-1.1-1.1-3.1Z" />
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                        <g class="st3">
-                            <g class="st4">
-                                <g class="st6">
-                                    <g class="st5">
-                                        <path class="st9"
-                                            d="M6.4,14.3l14.7,39.9,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,6.6-2.2-2.3-6.1-3.3,1.1-2.3-6.1-3.3,1.1-2.3-6.1-3.3,1.1-3.4-9.2,9.8-3.3-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1Z" />
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
+                <div class="home-grid">
+                    <h1 class="home-heading h1" role="heading" aria-level="1" aria-label="Where Creativity Warps Reality">
+                        <span>Where</span>
+                        <span class="line-2">Creativity Warps</span>
+                        <span>Reality</span>
+                    </h1>
+                    <img src="./images/star.svg" alt="" class="star-decor">
                 </div>
                 
+
+                <div class="hero-wrap">
+                    <picture class="hero">
+                        <!-- Mobile MAX: 576px -->
+                        <source srcset="./images/hero/hero-300x.jpg,
+                                                                ./images/hero/hero-600x.jpg 2x,
+                                                                ./images/hero/hero-900x.jpg 3x" media="(max-width: 576px)">
+                
+                        <!-- Tablet MAX: 768px -->
+                        <source srcset="./images/hero/hero-450x.jpg,
+                                                                ./images/hero/hero-900x.jpg 2x,
+                                                                ./images/hero/hero-1350x.jpg 3x" media="(max-width: 768px)">
+                
+                        <!-- Desktop MIN: 992px -->
+                        <source srcset="./images/hero/hero-735x.jpg,
+                                                                ./images/hero/hero-1470x.jpg 2x,
+                                                                ./images/hero/hero-2205x.jpg 3x" media="(min-width: 992px)">
+                
+                        <!-- Desktop MIN: 1200px -->
+                        <source srcset="./images/hero/hero-900x.jpg,
+                                                                ./images/hero/hero-1800x.jpg 2x,
+                                                                ./images/hero/hero-2700x.jpg 3x" media="(min-width: 1200px)">
+                        <!-- Default Fallback Image -->
+                        <img class="img-fluid" src="./images/hero/header-hero.jpg" alt="Hero banner" role="img">
+                    </picture>
+                
+                    <!-- DECORATIVE SVG -->
+                    <!-- <div class="cursor-decor">
+                        <svg id="cursor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            viewBox="0 0 62 73" width="50px" height="auto" viewBox="0 0 62 73" preserveAspectRatio="xMidYMid meet">
+                            <defs>
+                                <mask id="mask" x=".2" y=".5" width="61.7" height="71.9" maskUnits="userSpaceOnUse">
+                                    <g id="mask0_2553_6910">
+                                        <path class="st9" d="M.2,8.8L50.4.5l11.5,63.7-50.2,8.2L.2,8.8Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-1" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask1_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-2" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask2_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-3" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask3_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-4" x="5.8" y="7.1" width="51" height="61.7" maskUnits="userSpaceOnUse">
+                                    <g id="mask4_2553_6910">
+                                        <path class="st9" d="M5.8,13.8l41.1-6.7,9.9,55-41.1,6.7L5.8,13.8Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-5" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask5_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-6" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask6_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-7" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask7_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                            </defs>
+                            <g class="st0">
+                                <g class="st7">
+                                    <g class="st1">
+                                        <g class="st2">
+                                            <path class="st8"
+                                                d="M.8,9.3l19.2,52.2,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1-3.3,1.1L6.4,14.3l3.3-1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1ZM9.7,13.2l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM14.1,15.2l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM18.5,17.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM22.9,19.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM27.3,21.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM31.7,23.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM36.1,25l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM40.5,27l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM44.9,29l1.1,3.1-9.8,3.3,3.4,9.2,3.3-1.1-2.3-6.1,13.1-4.4-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1ZM42.9,43.4l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM48.4,48.5l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM54,53.5l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM56.2,59.7l-6.6,2.2,1.1,3.1,6.6-2.2-1.1-3.1ZM49.7,61.9l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM44.1,56.8l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM38.6,51.8l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM33.1,46.7l-2.3-6.1-3.3,1.1,1.1,3.1-3.3,1.1,1.1,3.1,6.6-2.2ZM26.5,48.9l-3.3,1.1,1.1,3.1,3.3-1.1-1.1-3.1Z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="st3">
+                                <g class="st4">
+                                    <g class="st6">
+                                        <g class="st5">
+                                            <path class="st9"
+                                                d="M6.4,14.3l14.7,39.9,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,6.6-2.2-2.3-6.1-3.3,1.1-2.3-6.1-3.3,1.1-2.3-6.1-3.3,1.1-3.4-9.2,9.8-3.3-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1Z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div> -->
+                    <svg id="cursor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            viewBox="0 0 62 73" width="60px" height="auto" viewBox="0 0 62 73" preserveAspectRatio="xMidYMid meet">
+                            <defs>
+                                <mask id="mask" x=".2" y=".5" width="61.7" height="71.9" maskUnits="userSpaceOnUse">
+                                    <g id="mask0_2553_6910">
+                                        <path class="st9" d="M.2,8.8L50.4.5l11.5,63.7-50.2,8.2L.2,8.8Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-1" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask1_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-2" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask2_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-3" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask3_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-4" x="5.8" y="7.1" width="51" height="61.7" maskUnits="userSpaceOnUse">
+                                    <g id="mask4_2553_6910">
+                                        <path class="st9" d="M5.8,13.8l41.1-6.7,9.9,55-41.1,6.7L5.8,13.8Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-5" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask5_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-6" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask6_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                                <mask id="mask-7" x=".8" y="-3.9" width="63.1" height="77.6" maskUnits="userSpaceOnUse">
+                                    <g id="mask7_2553_6910">
+                                        <path class="st9" d="M.8,9.2L40.1-3.9l23.8,64.5-39.3,13.1L.8,9.2Z" />
+                                    </g>
+                                </mask>
+                            </defs>
+                            <g class="st0">
+                                <g class="st7">
+                                    <g class="st1">
+                                        <g class="st2">
+                                            <path class="st8"
+                                                d="M.8,9.3l19.2,52.2,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1-3.3,1.1L6.4,14.3l3.3-1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1ZM9.7,13.2l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM14.1,15.2l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM18.5,17.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM22.9,19.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM27.3,21.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM31.7,23.1l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM36.1,25l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM40.5,27l1.1,3.1,3.3-1.1-1.1-3.1-3.3,1.1ZM44.9,29l1.1,3.1-9.8,3.3,3.4,9.2,3.3-1.1-2.3-6.1,13.1-4.4-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1ZM42.9,43.4l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM48.4,48.5l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM54,53.5l2.3,6.1,3.3-1.1-2.3-6.1-3.3,1.1ZM56.2,59.7l-6.6,2.2,1.1,3.1,6.6-2.2-1.1-3.1ZM49.7,61.9l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM44.1,56.8l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM38.6,51.8l-2.3-6.1-3.3,1.1,2.3,6.1,3.3-1.1ZM33.1,46.7l-2.3-6.1-3.3,1.1,1.1,3.1-3.3,1.1,1.1,3.1,6.6-2.2ZM26.5,48.9l-3.3,1.1,1.1,3.1,3.3-1.1-1.1-3.1Z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g class="st3">
+                                <g class="st4">
+                                    <g class="st6">
+                                        <g class="st5">
+                                            <path class="st9"
+                                                d="M6.4,14.3l14.7,39.9,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1,3.3-1.1-1.1-3.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,3.3-1.1,2.3,6.1,6.6-2.2-2.3-6.1-3.3,1.1-2.3-6.1-3.3,1.1-2.3-6.1-3.3,1.1-3.4-9.2,9.8-3.3-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1-1.1-3.1-3.3,1.1Z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                    </svg>
+
+                    <!-- Squiggle SVG -->
+                    <div class="boundary">
+                        <img src="./images/squiggle.svg" alt="" class="squiggle">
+                    </div>
+                     
+                    <!-- <svg id="curvy-line" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 122 128" width="160px">
+                        <path class="squiggle" d="M-2.3,93.6c-1.7-1-3.1-2.1-4.4-3.5-5-5.5-6.4-8.4-5.4-15.9C-11.2,67.4-6.8,60.8,0,56c5.9-4.2,12.7-6.6,18.7-8.5.6-.2,1.1-.4,1.7-.6,5.9-1.9,11.9-3.9,17.2-6.6,4-2.1,7.3-8.4,7.9-13.1.7-6.1-2.8-12.8-8.5-15.8-3.7-2-8.3-2.5-12.7-1.5-5.8,1.4-12,7.5-15.6,13-.3.4-.5.8-.8,1.2-1.8,2.9-4.1,6.5-8.4,8.3-3.8,1.6-8.3,1.1-11.7-.9-1.7-1-3.2-2.4-4.2-4.1-3.1-5.1-1.5-12.1,3.6-15.5,2.2-1.5,5.3-1,6.9,1.1,1.6,2.1,1.1,5.1-1.2,6.6-.9.6-1.3,2.2-.7,3.2s2.2,1.5,3.3,1c1.4-.6,2.7-2.5,4-4.6.3-.4.6-.9.8-1.3C4.8,11.1,12.8,3,21.8.8c6.8-1.7,14.2-.8,20.1,2.4,4.5,2.4,8.2,6.1,10.6,10.7,2.4,4.6,3.4,9.5,2.8,14.4-.4,3.6-1.9,7.7-4,11.2-1.7,2.9-4.7,6.8-9.1,9.1-6,3.1-12.5,5.2-18.7,7.2-.6.2-1.1.4-1.7.5-5.5,1.8-11.3,3.8-16,7.2-4.6,3.3-7.6,7.6-8.2,11.8-.6,4.4-.5,4.7,3.1,8.6,2.3,2.5,6.2,3.4,9.1,3.7,8.1.9,17.1-.9,25.3-5,6.4-3.3,12.5-7.9,18.6-14.2,1.9-2,3.8-4.1,5.7-6.2,4.3-4.8,8.7-9.7,14.1-13.9,6.3-4.8,16.7-9.4,27.3-8.2,6.6.7,12.1,3.7,16.1,8.6,4.5,5.5,5.9,12.4,4,19.4-2.3,8.4-9.4,16.1-17.9,19.4-4.2,1.6-8.4,2.3-12.6,3-1.1.2-2.1.3-3.1.5-8.1,1.5-16,3.9-23.4,7.3-7.6,3.5-12.4,6.5-11.3,10.1.7,2.2,4.8,3.1,8.3,2.8,3.2-.3,6.4-1.2,9.8-2.2,1.5-.4,3-.9,4.6-1.3,4.7-1.2,11.6-2.5,18.4-.2,3.4,1.2,6.5,3.3,8.6,6,2.4,3.1,3.5,6.8,3,10.3-.4,2.6-2.9,4.4-5.6,4-2.7-.4-4.6-2.7-4.2-5.3.4-2.5-2.3-5.2-5.1-6.2-3.1-1.1-7.1-.9-12.5.5-1.4.4-2.8.8-4.3,1.2-3.7,1.1-7.5,2.2-11.7,2.6-4.4.4-9.3-.3-13.1-2.5-2.7-1.6-4.8-3.8-5.8-6.9-1.2-3.7-1.3-9.3,5.1-14.7,3.6-3,8.2-5.2,11.3-6.6,8.2-3.8,16.9-6.5,25.9-8.1,1.1-.2,2.2-.4,3.2-.5,3.8-.6,7.3-1.2,10.5-2.4,5.7-2.2,10.6-7.5,12.2-13.1.8-2.9,1.1-7.2-2.2-11.2-2.3-2.9-5.5-4.5-9.5-5-6.2-.7-14,1.7-19.9,6.2-4.7,3.5-8.6,7.9-12.8,12.6-1.9,2.1-3.9,4.4-6,6.5-6.9,7.1-13.8,12.4-21.2,16.2-10,5.1-21.1,7.3-31.2,6.1-4.3-.5-8.1-1.7-11.1-3.5Z"/>
+                    </svg> -->
+                </div>
             </div>
         </section>
 
