@@ -339,6 +339,26 @@ h1.title.display-2.pt-4 {
 
 
 
+/* ****** CONTACT PAGE STYLES ****** */
+
+.bi-telephone, .bi-globe2, .bi-send {
+    color: var(--bs-primary);
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.contact-info {
+    background-image: url("../images/contact-bg-paper.jpg") !important;
+    background-size: cover !important;
+    background-repeat: none;
+    /* display: flex; */
+    width: 100vw !important;
+    height: 100% !important;
+}
+
+
+
+
 /* 48em = 768px */
 @media (max-width: 48em) {
     

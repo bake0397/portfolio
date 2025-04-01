@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
-    
     <title>Portfolio</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header class="header">
-        <!-- <a href="" class="logo">CSS Nav</a> -->
-        <!-- <div class="logo-head container-fluid bg-light"> -->
-        <div class="logo-head">
-            <img src="./images/logo-header.svg" class="logo p-3" alt="Saxe Studio Logo" id="home">
+    <header>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4">
+            </a>
+            <nav class="navbar navbar-expand-lg bg-body-success py-4" data-bs-theme="dark">
+                <div class="top-nav container-fluid">
+                    <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active link-dark" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <nav class="navbar">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <!-- Header Closing -->
 
@@ -102,32 +121,35 @@
             </div>
         </section>
 
-        <section>
+        <section class="contact-info">
             <div>
-                <div>
+                <div class="card bg-secondary w-25 p-5 rounded-4">
                     <div>
-                        <h4>Phone</h4>
-                        <span>&#40;613&#41;888-1111</span>
+                        <i class="bi bi-telephone d-flex justify-content-center"></i>
+                        <h2 class="h2 text-primary d-flex justify-content-center">Phone</h2>
+                        <span class="d-block text-center text-primary">&#40;613&#41;888-1111</span>
                     </div>
                 </div>
 
                 <div></div>
 
-                <div>
+                <div class="card bg-secondary w-25 p-5 rounded-4">
                     <div>
-                        <h4>Office</h4>
-                        <span>444 Saxe-Cornell Ave</span>
-                        <span>Ottawa, Ontario</span>
-                        <span>K3K 4N5</span>
+                        <i class="bi bi-globe2 d-flex justify-content-center"></i>
+                        <h2 class="h2 text-primary d-flex justify-content-center">Office</h2>
+                        <span class="d-block text-center text-primary">444 Saxe-Cornell Ave</span>
+                        <span class="d-block text-center text-primary">Ottawa, Ontario</span>
+                        <span class="d-block text-center text-primary">K3K 4N5</span>
                     </div>
                 </div>
 
                 <div></div>
 
-                <div>
+                <div class="card bg-secondary w-25 p-5 rounded-4">
                     <div>
-                        <h4>Email</h4>
-                        <span>hello&#64;saxestudio.com</span>
+                        <i class="bi bi-send d-flex justify-content-center"></i>
+                        <h2 class="h2 text-primary d-flex justify-content-center">Email</h2>
+                        <span class="d-block text-center text-primary">hello&#64;saxestudio.com</span>
                     </div>
                 </div>
 
@@ -138,11 +160,51 @@
     <!-- Main Closing -->
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer">
+        <div class="container-fluid bg-success border-top border-secondary border-5">
+            <div class="justify-content-center d-flex col container-fluid mb-5">
+                <div class="d-flex align-items-end me-4">
+                    <a href="index.html" class="text-black fs-4">Home</a>
+                    <a href="about.html" class="text-black fs-4">About Us</a>
+                </div>
+
+                <img src="./images/footer-logo.svg" alt="" class="w-25 justify-content-center pt-5 m-0">
+
+                <div class="d-flex align-items-end ms-4">
+                    <a href="#services" class="text-black fs-4">Services</a>
+                    <a href="contact.html" class="text-black fs-4">Contact</a>
+                </div>
+
+            </div>
+
+            <div class="container-sm d-flex justify-content-center mt-2 pt-5 border-top border-black border-1">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/taylor-baker-053123203/"><img src="./images/linkedin-icon.svg"
+                        alt="" class="img-fluid p-1"></a>
+
+                <!-- Instagram Social -->
+                <a href="https://www.instagram.com/cherrylightstudio"><img src="./images/instagram-icon.svg" alt=""
+                        class="img-fluid p-1"></a>
+
+
+                <!-- YouTube Social -->
+                <a href="https://www.youtube.com/@bake0397">
+                    <img src="./images/youtube-icon.svg" alt="" class="img-fluid p-1"></a>
+
+                <!-- GitHub Social -->
+                <img src="./images/github-icon.svg" alt="" class="img-fluid p-1">
+
+            </div>
+
+            <p class="text-center my-5 mb-0 pb-3">&copy; Copyright Saxe Studio 2025</p>
+        </div>
+    </footer>
     <!-- Footer Closing -->
 
     <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
