@@ -230,16 +230,6 @@ a {
     font-size: 3.5rem !important;
 }
 
-
-/* .top-nav.container-fluid {
-    margin-right: 2rem !important;
-} */
-
-/* .navbar {
-    margin-top: 0 !important;
-    display: flex;
-} */
-
 .navbar-nav a{
     align-items: center;
     justify-content: center;
@@ -251,7 +241,6 @@ a {
 .navbar-nav li {
     padding: 2rem;
 }
-
 
 h1.title.display-2.pt-4 {
     -webkit-text-stroke: 3px black !important;
@@ -267,6 +256,17 @@ h1.title.display-2.pt-4 {
     height: 2rem;
     width: 100vw;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.nav-link:hover {
+    display: flex;
+    font-size: 2.7rem;
+    /* font-weight: 600; */
+    /* color: #fff !important; */
+    text-decoration: underline solid 20%;
+    /* border-bottom: 4px solid #fff; */
+    width: fit-content;
+    transition: all;
 }
 
 @media (max-width: 991px) {
