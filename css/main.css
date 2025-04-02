@@ -375,42 +375,6 @@ h1.title.display-2.pt-4 {
 }
 
 
-
-/* ****** CONTACT PAGE STYLES ****** */
-
-
-
-/* Polaroid BG Cards */
-
-/* .polaroid-1 {
-    background-image: url("../images/polaroid-1.jpg") !important;
-    background-size: cover !important;
-    background-repeat: none;
-    display: flex;
-    width: 100vw !important;
-    height: 100vh !important;
-}
-
-.polaroid-2 {
-    background-image: url("../images/polaroid-2.jpg") !important;
-    background-size: cover !important;
-    background-repeat: none;
-    display: flex;
-    width: 100vw !important;
-    height: 100vh !important;
-}
-
-.polaroid-3 {
-    background-image: url("../images/polaroid-3.jpg") !important;
-    background-size: cover !important;
-    background-repeat: none;
-    display: flex;
-    width: 100vw !important;
-    height: 100vh !important;
-} */
-
-
-
 /* 48em = 768px */
 @media (max-width: 48em) {
     
@@ -646,11 +610,14 @@ h1.title.display-2.pt-4 {
 .contact-info {
     background-image: url("../images/contact-bg-paper.jpg") !important;
     background-size: cover !important;
-    background-repeat: no-repeat;
-    /* display: flex; */
+    background-attachment: local;
+    background-repeat: repeat-y !important;
+    display: flex;
     width: 100vw !important;
-    height: 100% !important;
+    height: 100vh !important;
 }
+
+
 
 @media (max-width: 999px) {
     .banner {
