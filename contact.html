@@ -20,36 +20,41 @@
     <!-- Header -->
     <header>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4">
-            </a>
-            <nav class="navbar navbar-expand-lg bg-body-success py-4" data-bs-theme="dark">
-                <div class="top-nav container-fluid">
-                    <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-100 justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link active link-dark" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-dark" href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-dark" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-dark" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4">
+          </a>
+          <nav class="navbar navbar-expand-lg bg-success py-4 w-100" data-bs-theme="dark">
+            <div class="top-nav container-fluid d-flex justify-content-end">
+              <button class="navbar-toggler ms-0 border-0 position-absolute translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-label="Close" class="toggle-off navbar-toggler border-0 d-flex" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" >
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+                <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item p-0">
+                    <a class="nav-link active link-dark px-5 offcanvas-color-light" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item p-0">
+                    <a class="nav-link link-dark px-5" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item p-0">
+                    <a class="nav-link link-dark px-5" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item p-0">
+                    <a class="nav-link link-dark px-5" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-    </header>
+      </header>
     <!-- Header Closing -->
 
     <!-- Main -->
@@ -63,19 +68,19 @@
                     <h1 aria-hidden="true" class="decorative h1">Reach Out</h1>
                     <h1 aria-hidden="true" class="decorative h1">Reach Out</h1>
                 </div>
-                <img src="./images/contact-hero.png" alt="" class="collage col img">
+                <img src="./images/contact-hero.png" alt="" class="collage col img-fluid">
             </div>
         </section>
 
-        <section class="form-section container">
-            <div class="row">
+        <section class="form-section">
+            <div class="container-fluid row">
                 <div class="col">
                     <h2 role="heading" aria-level="1" aria-label="Bring Your Vision To Life">
                         Bring Your Vision To Life.
                     </h2>
                     <p>Have a project in mind? Whether you need branding, web design, photography, or social media magic, Saxe Studio is here to bring your vision to life. Drop a message, and let’s make something unforgettable together!</p>
-                    <img src="./images/reciept.png" alt="" class="reciept-one">
-                    <img src="./images/reciept.png" alt="" class="reciept-two">
+                    <!-- <img src="./images/reciept.png" alt="" class="reciept-one img-fluid">
+                    <img src="./images/reciept.png" alt="" class="reciept-two img-fluid"> -->
                 </div>
                 <div class="col">
                     <form action="your-server-endpoint" method="POST" aria-labelledby="contact-form-title" role="form" itemscope
@@ -122,38 +127,114 @@
         </section>
 
         <section class="contact-info">
-            <div>
-                <div class="card bg-secondary w-25 p-5 rounded-4">
-                    <div>
-                        <i class="bi bi-telephone d-flex justify-content-center"></i>
-                        <h2 class="h2 text-primary d-flex justify-content-center">Phone</h2>
-                        <span class="d-block text-center text-primary">&#40;613&#41;888-1111</span>
+            <div class="container d-block justify-content-center">
+                <div class="row gxy-4 d-flex justify-content-center">
+                    <div class="col-md-4 card bg-secondary p-5 rounded-4">
+                        <div>
+                            <i class="bi bi-telephone d-flex justify-content-center"></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center">Phone</h2>
+                            <span class="d-block text-center text-primary">&#40;613&#41;888-1111</span>
+                        </div>
+                    </div>
+    
+                    <div class="polaroid-1 col-md-4">
+                        <!-- Polaroid 1 -->
+                        <picture>
+                            <source
+                            media="(max-width: 767px)"
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_300.png 300w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_360.png 360w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_414.png 414w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_461.png 461w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_508.png 508w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_544.png 544w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_584.png 584w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_623.png 623w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_651.png 651w,
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_660.png 660w">
+                            <source
+                            media="(min-width: 768px) and (max-width: 991px)"
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_660.png 660w">
+                            <source
+                            media="(min-width: 992px) and (max-width: 1199px)"
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_660.png 660w">
+                            <img
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-01_uv4wa0_c_scale,w_660.png 660w"
+                            src="./images/polaroid/polaroid-01_uv4wa0_c_scale,w_660.png"
+                            alt="" class="img-fluid">
+                        </picture>
+                    </div>
+    
+                    <div class="col-md-4 card bg-secondary p-5 rounded-4">
+                        <div>
+                            <i class="bi bi-globe2 d-flex justify-content-center"></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center">Office</h2>
+                            <span class="d-block text-center text-primary">444 Saxe-Cornell Ave</span>
+                            <span class="d-block text-center text-primary">Ottawa, Ontario</span>
+                            <span class="d-block text-center text-primary">K3K 4N5</span>
+                        </div>
                     </div>
                 </div>
-
-                <div></div>
-
-                <div class="card bg-secondary w-25 p-5 rounded-4">
-                    <div>
-                        <i class="bi bi-globe2 d-flex justify-content-center"></i>
-                        <h2 class="h2 text-primary d-flex justify-content-center">Office</h2>
-                        <span class="d-block text-center text-primary">444 Saxe-Cornell Ave</span>
-                        <span class="d-block text-center text-primary">Ottawa, Ontario</span>
-                        <span class="d-block text-center text-primary">K3K 4N5</span>
+                
+                <div class="row gxy-4 d-flex justify-content-center">
+                    <div class="polaroid-2 col-md-4">
+                        <!-- Polaroid 2 -->
+                        <picture>
+                            <source
+                            media="(max-width: 767px)"
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_300.png 300w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_359.png 359w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_413.png 413w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_461.png 461w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_504.png 504w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_546.png 546w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_586.png 586w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_626.png 626w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_646.png 646w,
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_660.png 660w">
+                            <source
+                            media="(min-width: 768px) and (max-width: 991px)"
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_660.png 660w">
+                            <source
+                            media="(min-width: 992px) and (max-width: 1199px)"
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_660.png 660w">
+                            <img
+                            sizes="(max-width: 660px) 100vw, 660px"
+                            srcset="
+                            ./images/polaroid/polaroid-02_kwb05j_c_scale,w_660.png 660w"
+                            src="./images/polaroid/polaroid-02_kwb05j_c_scale,w_660.png"
+                            alt="">
+                            </picture>
+                            
+                        
+                    </div>
+    
+                    <div class="col-md-4 card bg-secondary w-25 p-5 rounded-4">
+                        <div>
+                            <i class="bi bi-send d-flex justify-content-center"></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center">Email</h2>
+                            <span class="d-block text-center text-primary">hello&#64;saxestudio.com</span>
+                        </div>
+                    </div>
+    
+                    <div class="polaroid-3 col-md-4">
+                        <!-- Polaroid 3 -->
                     </div>
                 </div>
-
-                <div></div>
-
-                <div class="card bg-secondary w-25 p-5 rounded-4">
-                    <div>
-                        <i class="bi bi-send d-flex justify-content-center"></i>
-                        <h2 class="h2 text-primary d-flex justify-content-center">Email</h2>
-                        <span class="d-block text-center text-primary">hello&#64;saxestudio.com</span>
-                    </div>
-                </div>
-
-                <div></div>
             </div>
         </section>
     </main>
