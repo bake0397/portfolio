@@ -187,14 +187,6 @@ a {
     flex-direction: column-reverse !important;
 }
 
-/* #navbarSupportedContent > ul {
-    color: #ffffff !important;
-    display: flex;
-    padding: 2rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-} */
-
 /* * {
     margin: 0;
     padding: 0;
@@ -207,8 +199,6 @@ a {
     margin-left: 0 !important;
     /* padding-top: 9rem !important; */
 }
-
-
 
 .container-fluid {
     min-width: 100vw !important;
