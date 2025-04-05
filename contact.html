@@ -18,12 +18,12 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header role="banner" itemscope itemtype="https://schema.org/ProfessionalService">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4">
+          <a class="navbar-brand" href="#" itemprop="url">
+            <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4" itemprop="logo">
           </a>
-          <nav class="navbar navbar-expand-lg bg-success py-4 w-100" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg bg-success py-4 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
             <div class="top-nav container-fluid d-flex justify-content-end">
               <button class="navbar-toggler ms-0 border-0 position-absolute translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,18 +36,18 @@
                 data-bs-target="#navbarSupportedContent" >
                     <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
                 </svg>
-                <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end">
+                <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end" role="menubar">
                   <li class="nav-item p-0">
-                    <a class="nav-link active link-dark px-5 offcanvas-color-light fs-4" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active link-dark px-5 offcanvas-color-light fs-4" aria-current="page" href="index.html" role="menuitem">Home</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link link-dark px-5 fs-4" href="about.html">About Us</a>
+                    <a class="nav-link link-dark px-5 fs-4" href="about.html" role="menuitem">About Us</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link link-dark px-5 fs-4" href="#services">Services</a>
+                    <a class="nav-link link-dark px-5 fs-4" href="#services" role="menuitem">Services</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link link-dark px-5 fs-4" href="contact.html">Contact</a>
+                    <a class="nav-link link-dark px-5 fs-4" href="contact.html" role="menuitem">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -58,67 +58,61 @@
     <!-- Header Closing -->
 
     <!-- Main -->
-    <main>
-        <section class="banner">
+    <main role="main" itemscope itemtype="https://schema.org/ContactPage">
+        <section class="banner" role="region" aria-label="Contact Hero">
             <div class="row p-3">
                 <div class="heading-container col">
-                    <h1 class="contact h1">Reach Out</h1>
+                    <h1 class="contact h1" itemprop="headline">Reach Out</h1>
                     <h1 aria-hidden="true" class="decorative h1 ">Reach Out</h1>
                     <h1 aria-hidden="true" class="decorative h1">Reach Out</h1>
                     <h1 aria-hidden="true" class="decorative h1">Reach Out</h1>
                     <h1 aria-hidden="true" class="decorative h1">Reach Out</h1>
                 </div>
-                <img src="./images/contact-hero.png" alt="" class="collage col img-fluid">
+                <img src="./images/contact-hero.png" alt="" class="collage col img-fluid" itemprop="image">
             </div>
         </section>
 
-        <section class="form-section">
+        <section class="form-section" role="form" aria-label="Contact Form">
             <div class="container-fluid row">
                 <div class="col">
-                    <h2 role="heading" aria-level="1" aria-label="Bring Your Vision To Life">
-                        Bring Your Vision To Life.
+                    <h2 role="heading" aria-level="1" aria-label="Bring Your Vision To Life" itemprop="about">Bring Your Vision To Life.
                     </h2>
-                    <p>Have a project in mind? Whether you need branding, web design, photography, or social media magic, Saxe Studio is here to bring your vision to life. Drop a message, and let’s make something unforgettable together!</p>
+                    <p itemprop="description">Have a project in mind? Whether you need branding, web design, photography, or social media magic, Saxe Studio is here to bring your vision to life. Drop a message, and let’s make something unforgettable together!</p>
                     <!-- <img src="./images/reciept.png" alt="" class="reciept-one img-fluid">
                     <img src="./images/reciept.png" alt="" class="reciept-two img-fluid"> -->
                 </div>
                 <div class="col">
-                    <form action="your-server-endpoint" method="POST" aria-labelledby="contact-form-title" role="form" itemscope
-                        itemtype="https://schema.org/ContactPage">
+                    <form action="your-server-endpoint" method="POST" aria-labelledby="contact-form-title" role="form" itemscope itemtype="https://schema.org/ContactPage">
         
                         <fieldset>
-                            <legend id="contact-form-title">Send Us a Message</legend>
+                            <legend id="contact-form-title" itemprop="name">Send Us a Message</legend>
         
                             <!-- First Name -->
                             <div class="form-group">
                                 <label for="first-name">First Name <span aria-hidden="true">*</span></label>
-                                <input type="text" id="first-name" name="first-name" required aria-required="true"
-                                    autocomplete="given-name" itemprop="name">
+                                <input type="text" id="first-name" name="first-name" required aria-required="true" autocomplete="given-name" itemprop="name">
                             </div>
         
                             <!-- Last Name -->
                             <div class="form-group">
                                 <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
-                                <input type="text" id="last-name" name="last-name" required aria-required="true"
-                                    autocomplete="family-name" itemprop="name">
+                                <input type="text" id="last-name" name="last-name" required aria-required="true" autocomplete="family-name" itemprop="name">
                             </div>
         
                             <!-- Email -->
                             <div class="form-group">
                                 <label for="email">Email <span aria-hidden="true">*</span></label>
-                                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email"
-                                    itemprop="email">
+                                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" itemprop="email">
                             </div>
         
                             <!-- Message -->
                             <div class="form-group">
                                 <label for="message">Message <span aria-hidden="true">*</span></label>
-                                <textarea id="message" name="message" required aria-required="true" rows="4"
-                                    itemprop="description"></textarea>
+                                <textarea id="message" name="message" required aria-required="true" rows="4" itemprop="description"></textarea>
                             </div>
         
                             <!-- Submit Button -->
-                            <button type="submit">Send Message</button>
+                            <button type="submit" itemprop="url">Send Message</button>
         
                         </fieldset>
                     </form>
@@ -126,18 +120,19 @@
             </div>
         </section>
 
-        <section class="contact-info">
+        <section class="contact-info" role="contentinfo" aria-label="Studio Contact Info" itemscope itemtype="https://schema.org/Organization">
             <div class="container d-block justify-content-center">
                 <div class="row gxy-4 mt-4 d-flex justify-content-center">
                     <div class="col-md-4 card bg-secondary p-5 rounded-4">
-                        <div>
-                            <i class="bi bi-telephone d-flex justify-content-center"></i>
+                        <!-- Phone Number -->
+                        <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                            <i class="bi bi-telephone d-flex justify-content-center" aria-hidden="true"></i>></i>
                             <h2 class="h2 text-primary d-flex justify-content-center">Phone</h2>
                             <span class="d-block text-center text-primary">&#40;613&#41;888-1111</span>
                         </div>
                     </div>
     
-                    <div class="polaroid-1 col-md-4">
+                    <div class="polaroid-1 col-md-4" aria-hidden="true" role="presentation">
                         <!-- Polaroid 1 -->
                         <picture>
                             <source
@@ -173,19 +168,19 @@
                         </picture>
                     </div>
     
-                    <div class="col-md-4 card bg-secondary p-5 rounded-4">
+                    <div class="col-md-4 card bg-secondary p-5 rounded-4" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                         <div>
-                            <i class="bi bi-globe2 d-flex justify-content-center"></i>
+                            <i class="bi bi-globe2 d-flex justify-content-center" aria-hidden="true"></i>></i>
                             <h2 class="h2 text-primary d-flex justify-content-center">Office</h2>
-                            <span class="d-block text-center text-primary">444 Saxe-Cornell Ave</span>
-                            <span class="d-block text-center text-primary">Ottawa, Ontario</span>
-                            <span class="d-block text-center text-primary">K3K 4N5</span>
+                            <span class="d-block text-center text-primary" itemprop="streetAddress">444 Saxe-Cornell Ave</span>
+                            <span class="d-block text-center text-primary" itemprop="addressLocality">Ottawa, Ontario</span>
+                            <span class="d-block text-center text-primary" itemprop="postalCode">K3K 4N5</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="row gxy-4 mt-4 mb-5 d-flex justify-content-center">
-                    <div class="polaroid-2 col-md-4">
+                    <div class="polaroid-2 col-md-4" aria-hidden="true" role="presentation">
                         <!-- Polaroid 2 -->
                         <picture>
                             <source
@@ -223,15 +218,15 @@
                         
                     </div>
     
-                    <div class="col-md-4 card bg-secondary p-5 rounded-4">
+                    <div class="col-md-4 card bg-secondary p-5 rounded-4" itemprop="email">
                         <div>
-                            <i class="bi bi-send d-flex justify-content-center"></i>
-                            <h2 class="h2 text-primary d-flex justify-content-center">Email</h2>
-                            <span class="d-block text-center text-primary">hello&#64;saxestudio.com</span>
+                            <i class="bi bi-send d-flex justify-content-center" aria-hidden="true"></i>></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center" itemprop="contactType">Email</h2>
+                            <span class="d-block text-center text-primary" itemprop="email">hello&#64;saxestudio.com</span>
                         </div>
                     </div>
     
-                    <div class="polaroid-3 col-md-4 g-4">
+                    <div class="polaroid-3 col-md-4 g-4" aria-hidden="true" role="presentation">
                         <!-- Polaroid 3 -->
                         <picture>
                             <source
@@ -305,7 +300,7 @@
                     <img src="./images/youtube-icon.svg" alt="" class="img-fluid p-1"></a>
 
                 <!-- GitHub Social -->
-                <img src="./images/github-icon.svg" alt="" class="img-fluid p-1">
+                <a href="https://github.com/bake0397" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="img-fluid p-1"></a>
 
             </div>
 

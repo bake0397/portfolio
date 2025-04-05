@@ -18,12 +18,12 @@
 <body>
     
   <!-- Header -->
-  <header>
+  <header role="banner" itemscope itemtype="https://schema.org/ProfessionalService">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4">
+      <a class="navbar-brand" href="#" itemprop="url">
+        <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4" itemprop="logo">
       </a>
-      <nav class="navbar navbar-expand-lg bg-success py-4 w-100" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-success py-4 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
         <div class="top-nav container-fluid d-flex justify-content-end">
           <button class="navbar-toggler ms-0 border-0 position-absolute translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,18 +36,18 @@
             data-bs-target="#navbarSupportedContent" >
                 <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
             </svg>
-            <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end">
+            <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end" role="menubar">
               <li class="nav-item p-0">
-                <a class="nav-link active link-dark px-5 offcanvas-color-light fs-4" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active link-dark px-5 offcanvas-color-light fs-4" aria-current="page" href="index.html" role="menuitem">Home</a>
               </li>
               <li class="nav-item p-0">
-                <a class="nav-link link-dark px-5 fs-4" href="about.html">About Us</a>
+                <a class="nav-link link-dark px-5 fs-4" href="about.html" role="menuitem">About Us</a>
               </li>
               <li class="nav-item p-0">
-                <a class="nav-link link-dark px-5 fs-4" href="#services">Services</a>
+                <a class="nav-link link-dark px-5 fs-4" href="#services" role="menuitem">Services</a>
               </li>
               <li class="nav-item p-0">
-                <a class="nav-link link-dark px-5 fs-4" href="contact.html">Contact</a>
+                <a class="nav-link link-dark px-5 fs-4" href="contact.html" role="menuitem">Contact</a>
               </li>
             </ul>
           </div>
@@ -58,27 +58,26 @@
   <!-- Header Closing -->
 
   <!-- Main -->
-  <main>
+  <main role="main" itemscope itemtype="https://schema.org/WebPageElement">
     <!-- BANNER Section -->
-    <section class="banner py-4" id="home">
+    <section class="banner py-4" id="home" role="region" aria-label="Homepage Banner" itemscope itemtype="https://schema.org/WPHeader">
       <div class="container-fluid text-light">
-        <h1 class="title display-2 pt-4">Where Creativity Warps Reality</h1>
+        <h1 class="title display-2 pt-4" itemprop="headline">Where Creativity Warps Reality</h1>
         <!-- <a href="#contact" class="btn btn-primary text-secondary py-2">Connect with us</a> -->
       </div>
     </section>
 
     <!-- SERVICES Section -->
-    <section id="services" class="bg-primary py-2">
+    <section id="services" class="bg-primary py-2" role="region" aria-label="Services" itemscope itemtype="https://schema.org/Service">
       <div class="container-fluid mt-1 px-5 pb-5 w-100">
-        <h2 class="h2 my-5"><strong>Package Deals</strong></h2>
+        <h2 class="h2 my-5" itemprop="name"><strong>Package Deals</strong></h2>
 
         <div class="d-flex row">
-          <div class="ser g-flex col-sm">
+          <div class="ser g-flex col-sm" itemscope itemtype="https://schema.org/Service">
             <span class="display-4"><strong>01.</strong></span>
-            <span class="ms-5 fs-5">Starter Creative Package</span>
-            <img src="./images/service-01.png" alt="" class="img-fluid">
-            <svg class="ms-4" id="code-1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
-              width="8rem">
+            <span class="ms-5 fs-5" itemprop="name">Starter Creative Package</span>
+            <img src="./images/service-01.png" alt="" class="img-fluid" itemprop="image">
+            <svg class="ms-4" id="code-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49" width="8rem">
               <path d="M0,0h2.6v49H0V0Z" />
               <path d="M0,0h2.6v49H0V0Z" />
               <path d="M21.3,0h4v49h-4V0Z" />
@@ -165,11 +164,11 @@
             <button type="button" class="btn btn-secondary ms-5">Read More</button>
           </div>
 
-          <div class="ser g-flex col-sm">
+          <div class="ser g-flex col-sm" itemscope itemtype="https://schema.org/Service">
             <span class="display-4"><strong>02.</strong></span>
-            <span class="ms-5 fs-4 fs-md-2 fs-lg-1">Growth Package</span>
-            <img src="./images/service-02.png" alt="" class="img-fluid">
-            <svg class="ms-4" id="code-2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
+            <span class="ms-5 fs-4 fs-md-2 fs-lg-1" itemprop="name">Growth Package</span>
+            <img src="./images/service-02.png" alt="" class="img-fluid" itemprop="image">
+            <svg class="ms-4" id="code-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
               width="8rem">
               <path d="M0,0h2.6v49H0V0Z" />
               <path d="M0,0h2.6v49H0V0Z" />
@@ -255,11 +254,11 @@
             <button type="button" class=" btn btn-secondary ms-5 w-auto">Read More</button>
           </div>
 
-          <div class="ser g-flex col-sm">
+          <div class="ser g-flex col-sm" itemscope itemtype="https://schema.org/Service">
             <span class="display-4"><strong>03.</strong></span>
-            <span class="ms-5 fs-5">Elite Digital Package</span>
-            <img src="./images/service-03.png" alt="" class="img-fluid">
-            <svg class="ms-4" id="code-3" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
+            <span class="ms-5 fs-5" itemprop="name">Elite Digital Package</span>
+            <img src="./images/service-03.png" alt="" class="img-fluid" itemprop="image">
+            <svg class="ms-4" id="code-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
               width="8rem">
               <path d="M200,0h-2.6v49h2.6V0Z" />
               <path d="M199.9,0h-2.6v49h2.6V0Z" />
@@ -399,8 +398,7 @@
           <img src="./images/youtube-icon.svg" alt="" class="img-fluid p-1"></a>
 
         <!-- GitHub Social -->
-        <img src="./images/github-icon.svg" alt="" class="img-fluid p-1">
-
+        <a href="https://github.com/bake0397" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="img-fluid p-1"></a>
       </div>
 
       <p class="text-center my-5 mb-0 pb-3">&copy; Copyright Saxe Studio 2025</p>
