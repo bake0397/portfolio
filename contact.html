@@ -11,7 +11,7 @@
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -20,7 +20,7 @@
     <header role="banner" itemscope itemtype="https://schema.org/ProfessionalService">
         <div class="container-fluid mt-1">
           <a class="navbar-brand" href="#" itemprop="url">
-            <img src="./images/logo-header.svg" alt="" class="logo pt-2 pb-2 ps-4" itemprop="logo">
+            <img src="./images/logo-header.svg" alt="Saxe Studio Logo" class="logo pt-2 pb-2 ps-4" itemprop="logo">
           </a>
           <nav class="navbar navbar-expand-lg bg-success py-2 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
             <div class="top-nav container-fluid d-flex justify-content-end">
@@ -125,14 +125,14 @@
                                 <!-- First Name -->
                                 <div class="col pe-2 form-group">
                                     <label for="first-name" class="form-label text-black">First Name</label>
-                                    <input type="text" class="form-control border border-secondary border-4" id="first-name" name="first-name" required aria-required="true" autocomplete="given-name" itemprop="name">
+                                    <input type="text" class="form-control border border-secondary border-4" id="first-name" name="first-name" required aria-required="true" autocomplete="given-name" itemprop="name" placeholder="Jane">
                                 </div>
                                 
         
                                 <!-- Last Name -->
                                 <div class="col ps-2 form-group">
                                     <label for="last-name" class="form-label text-black">Last Name</label>
-                                    <input type="text" class="form-control border border-secondary border-4" id="last-name" name="last-name" required aria-required="true" autocomplete="family-name" itemprop="name">
+                                    <input type="text" class="form-control border border-secondary border-4" id="last-name" name="last-name" required aria-required="true" autocomplete="family-name" itemprop="name" placeholder="Doe">
                                 </div>
                             </div>
                            
@@ -140,17 +140,17 @@
                             <!-- Email -->
                             <div class="row form-group mt-4">
                                 <label for="email" class="form-label text-black">Email</label>
-                                <input type="email" class="form-control w-100 m-0 border border-secondary border-4" id="email" name="email" required aria-required="true" autocomplete="email" itemprop="email">
+                                <input type="email" class="form-control w-100 m-0 border border-secondary border-4" id="email" name="email" required aria-required="true" autocomplete="email" itemprop="email" placeholder="example@example.com">
                             </div>
         
                             <!-- Message -->
                             <div class="mess row form-group mt-4">
                                 <label for="message" class="form-label text-black">Message</label>
-                                <textarea id="message" class="form-control resize-none border border-secondary border-4" name="message" required aria-required="true" rows="4" itemprop="description"></textarea>
+                                <textarea id="message" class="form-control resize-none border border-secondary border-4" name="message" required aria-required="true" rows="4" itemprop="description" placeholder="Type your message here..."></textarea>
                             </div>
                             
                             <!-- Submit Button -->
-                            <button type="submit" itemprop="url" class="btn btn-secondary mt-5 py-2 mb-5">Send Message</button>
+                            <button type="submit" itemprop="url" class="btn btn-secondary mt-5 py-2 mb-5 fw-bold">Send Message</button>
         
                         </fieldset>
                     </form>
@@ -164,8 +164,8 @@
                     <div class="card bg-secondary p-4 rounded-4">
                         <!-- Phone Number -->
                         <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-                            <i class="bi bi-telephone d-flex justify-content-center" aria-hidden="true"></i></i>
-                            <h2 class="h2 text-primary d-flex justify-content-center">Phone</h2>
+                            <i class="bi bi-telephone d-flex justify-content-center mt-4" aria-hidden="true"></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center mt-4">Phone</h2>
                             <span class="d-block text-center text-primary">&#40;613&#41; 888-1111</span>
                         </div>
                     </div>
@@ -208,8 +208,8 @@
     
                     <div class="card bg-secondary p-4 rounded-4" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                         <div>
-                            <i class="bi bi-globe2 d-flex justify-content-center" aria-hidden="true"></i></i>
-                            <h2 class="h2 text-primary d-flex justify-content-center">Office</h2>
+                            <i class="bi bi-globe2 d-flex mt-4 justify-content-center" aria-hidden="true"></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center mt-4">Office</h2>
                             <span class="d-block text-center text-primary" itemprop="streetAddress">444 Saxe-Cornell Ave</span>
                             <span class="d-block text-center text-primary" itemprop="addressLocality">Ottawa, Ontario</span>
                             <span class="d-block text-center text-primary" itemprop="postalCode">K3K 4N5</span>
@@ -258,8 +258,8 @@
     
                     <div class="card bg-secondary p-4 rounded-4" itemprop="email">
                         <div>
-                            <i class="bi bi-send d-flex justify-content-center" aria-hidden="true"></i></i>
-                            <h2 class="h2 text-primary d-flex justify-content-center" itemprop="contactType">Email</h2>
+                            <i class="bi bi-send d-flex justify-content-center mt-4" aria-hidden="true"></i>
+                            <h2 class="h2 text-primary d-flex justify-content-center mt-4" itemprop="contactType">Email</h2>
                             <span class="email d-block text-center text-primary" itemprop="email">hello&#64;saxestudio.com</span>
                         </div>
                     </div>
@@ -306,7 +306,7 @@
     <!-- Main Closing -->
 
     <!-- Footer -->
-    <footer class="site-footer d-flex" role="contentinfo">
+    <footer class="site-footer d-flex w-100" role="contentinfo" itemscope itemtype="https://schema.org/Organization">
         <div class="footer-cont container-fluid bg-success border-top border-secondary border-5">
             <div class="footer-items d-flex justify-content-center mt-5 mb-5">
                 
