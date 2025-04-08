@@ -10,6 +10,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
   <!-- Animate Style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Hover CSS -->
+  <link href="css/hover-min.css" rel="stylesheet">
   <!-- Reset CSS -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- Custom CSS -->
@@ -18,8 +20,8 @@
   <title>Portfolio</title>
 </head>
 
-<body>
-    
+<body id="top">
+  <a href="#main-content" class="skip-link visually-hidden-focusable" aria-label="Skip to main content">Skip to main content</a>
   <!-- Header -->
   <header role="banner" itemscope itemtype="https://schema.org/ProfessionalService">
     <div class="container-fluid mt-1">
@@ -61,42 +63,54 @@
   <!-- Header Closing -->
 
   <!-- Main -->
-  <main role="main" itemscope itemtype="https://schema.org/WebPageElement">
+  <main id="main-content" role="main" itemscope itemtype="https://schema.org/WebPageElement">
     <!-- BANNER Section -->
-    <section class="home-banner" id="home" role="region" aria-label="Homepage Banner" itemscope itemtype="https://schema.org/WPHeader">
-      <!-- <div class="container-fluid text-light">
-        <h1 class="title display-2 pt-4" itemprop="headline">Where Creativity Warps Reality</h1>
-      </div> -->
-
-      <div class="app">
-        <!-- <div class="title">
-          <div class="title-inner">
-            <div class="cafe">
-              <div class="cafe-inner">Where Creativity</div>
-            </div>
-            <div class="mozart">
-              <div class="mozart-inner">Warps reality</div>
-            </div>
-          </div>
-        </div> -->
-      
-        <div class="image">
-          <!-- <img src="./images/orange.png" alt="" class="img-fluid w-100"> -->
-          <h1 class="home-title d-flex animate__animated animate__slideInUP text-center">Saxe<span class="text-center d-flex"><br>Studio</span></h1>
-          <!-- <img src="./images/hero-plain.png" alt="" class="img-fluid w-100"> -->
-        </div>
+    <section class="home-banner h-100" id="home" role="region" aria-label="Homepage Banner" itemscope itemtype="https://schema.org/WPHeader">
+      <div class="container-fluid">
+        <h1 class="visually-hidden">Saxe Studio</h1>
+        <picture>
+          <source
+          media="(max-width: 767px)"
+          sizes="(max-width: 1537px) 60vw, 922px"
+          srcset="
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_200.png 200w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_472.png 472w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_666.png 666w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_819.png 819w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_922.png 922w">
+          <source
+          media="(min-width: 768px) and (max-width: 991px)"
+          sizes="(max-width: 1983px) 70vw, 1388px"
+          srcset="
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_538.png 538w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_835.png 835w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1073.png 1073w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1270.png 1270w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1388.png 1388w">
+          <source
+          media="(min-width: 992px) and (max-width: 1199px)"
+          sizes="(max-width: 2087px) 90vw, 1878px"
+          srcset="
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_893.png 893w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1235.png 1235w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1518.png 1518w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1762.png 1762w,
+          ./images/hero/orange-plain_f4gc4c_c_scale,w_1878.png 1878w">
+          <img src="./images/hero/orange-plain.png" alt="" class="img-fluid w-100">
+        </picture>
+        <!-- <h1 class="title display-2 pt-4" itemprop="headline">Where Creativity Warps Reality</h1> -->
       </div>
     </section>
 
     <!-- SERVICES Section -->
     <section id="services" class="bg-primary py-2" role="region" aria-label="Services" itemscope itemtype="https://schema.org/Service">
       <div class="container-fluid mt-1 px-5 pb-5 w-100">
-        <h2 class="h2 my-5 text-center" itemprop="name"><strong>Package Deals</strong></h2>
+        <h2 class="h2 my-5 text-center text-uppercase fw-bold" itemprop="name">Package Deals</h2>
 
-        <div class="d-flex row">
+        <div class="service-cont d-flex row">
           <div class="ser g-flex col-sm" itemscope itemtype="https://schema.org/Service">
-            <span class="display-4"><strong>01.</strong></span>
-            <span class="ms-2" itemprop="name">Starter Creative Package</span>
+            <span class="option display-4 fw-bold">01.</span>
+            <span class="service ms-2" itemprop="name">Starter Creative Package</span>
             <img src="./images/service-01.png" alt="" class="img-fluid" itemprop="image">
             <svg class="ms-4" id="code-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49" width="8rem">
               <path d="M0,0h2.6v49H0V0Z" />
@@ -186,8 +200,8 @@
           </div>
 
           <div class="ser g-flex col-sm" itemscope itemtype="https://schema.org/Service">
-            <span class="display-4"><strong>02.</strong></span>
-            <span class="ms-2" itemprop="name">Growth Package</span>
+            <span class="option display-4 fw-bold">02.</span>
+            <span class="service ms-2" itemprop="name">Growth Package</span>
             <img src="./images/service-02.png" alt="" class="img-fluid" itemprop="image">
             <svg class="ms-4 img-fluid" id="code-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
               width="8rem">
@@ -276,8 +290,8 @@
           </div>
 
           <div class="ser g-flex col-sm" itemscope itemtype="https://schema.org/Service">
-            <span class="display-4"><strong>03.</strong></span>
-            <span class="ms-2" itemprop="name">Elite Digital Package</span>
+            <span class="option display-4 fw-bold">03.</span>
+            <span class="service ms-2" itemprop="name">Elite Digital Package</span>
             <img src="./images/service-03.png" alt="" class="img-fluid" itemprop="image">
             <svg class="ms-4" id="code-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 200 49"
               width="8rem">
@@ -373,12 +387,10 @@
         <div class="cta-content col">
             <h2 class="h2 mt-4 mx-5">Designed to inspire.
             Built to stand out.</h2>
-            <p class="mt-5 mx-5 lh-2">Saxe Studio is where creativity gets playful, ideas get bold, and design meets strategy.
-            We craft vibrant brands, sleek websites, eye-catching visuals, and engaging content—bringing your vision to
-            life with innovation and personality. Transparency is at the heart of our process, so you’re part of the
-            journey every step of the way. Whether you're starting fresh or levelling up, we make creativity fun,
-            seamless, and impactful. Let’s build something unforgettable together!</p>
-            <a href="#contact" class="btn btn-primary mt-5 ms-5 py-2 mb-5">Get in Touch</a>
+            <p class="mt-5 mx-5 lh-5">Saxe Studio is where creativity gets playful, ideas get bold, and design meets strategy.
+            We craft vibrant brands, sleek websites, eye-catching visuals, and engaging content—bringing your vision to life with innovation and personality. Transparency is at the heart of our process, so you’re part of the
+            journey every step of the way. Whether you're starting fresh or levelling up, we make creativity fun, seamless, and impactful. Let’s build something unforgettable together!</p>
+            <a href="contact.html" class="btn btn-primary mt-5 ms-5 py-2 mb-5">Get in Touch</a>
         </div>
         <div class="pattern-bg col m-0 p-0"></div>
       </div>
@@ -387,30 +399,30 @@
   <!-- Main Closing -->
 
   <!-- Footer -->
-  <footer class="d-flex">
+  <footer class="d-flex" role="contentinfo">
     <div class="footer-cont container-fluid bg-success border-top border-secondary border-5">
         <div class="footer-items d-flex justify-content-center mt-5 mb-5">
             
-            <nav class="foot-one d-flex align-items-end flex-shrink-1 pe-3" aria-label="Footer navigation">
+            <nav class="foot-one d-flex align-items-end flex-shrink-1 pe-3" aria-label="Footer navigation" role="navigation">
                 <ul class="foot-nav d-flex gap-4">
                     <li>
-                        <a href="index.html" class="nav-link d-flex fs-5 fs-md-4 fs-lg-3 text-black">Home</a>
+                        <a href="index.html" class="nav-link hvr-grow-shadow d-flex fs-5 fs-md-4 fs-lg-3 text-black">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">About Us</a>
+                        <a href="about.html" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">About Us</a>
                     </li>
                 </ul>
             </nav>
         
-            <img src="./images/footer-logo.svg" alt="Saxe Studio Logo" class="logo-foot w-25 justify-content-center d-flex m-0 img-fluid">
+            <img src="./images/footer-logo.svg" alt="Saxe Studio Logo" class="logo-foot w-25 justify-content-center d-flex m-0 img-fluid" itemprop="name" content="Saxe Studio">
 
-            <nav class="foot-two d-flex align-items-end flex-shrink-1 ps-3" aria-label="Footer navigation">
+            <nav class="foot-two d-flex align-items-end flex-shrink-1 ps-3" aria-label="Footer navigation" role="navigation">
                 <ul class="foot-nav d-flex gap-4">
                     <li>
-                        <a href="#services" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">Services</a>
+                        <a href="#services" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">Services</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">Contact</a>
+                        <a href="contact.html" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -420,22 +432,23 @@
 
         <div class="social-icons container-sm d-flex justify-content-center mt-2 pt-5 border-top border-black border-1" aria-label="Social media links">
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/taylor-baker-053123203/" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-icon.svg" alt="" class="social linkedin img-fluid p-1"></a>
+            <a href="https://www.linkedin.com/in/taylor-baker-053123203/" itemprop="url" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-icon.svg" alt="" class="social linkedin img-fluid p-1"></a>
     
             <!-- Instagram Social -->
-            <a href="https://www.instagram.com/cherrylightstudio" aria-label="Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-icon.svg" alt="" class="social instagram img-fluid p-1"></a>
+            <a href="https://www.instagram.com/cherrylightstudio" itemprop="url" aria-label="Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-icon.svg" alt="" class="social instagram img-fluid p-1"></a>
     
     
             <!-- YouTube Social -->
-            <a href="https://www.youtube.com/@bake0397" aria-label="YouTube (opens in new tab)" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@bake0397" itemprop="url" aria-label="YouTube (opens in new tab)" target="_blank" rel="noopener noreferrer">
               <img src="./images/youtube-icon.svg" alt="" class="social youtube img-fluid p-1"></a>
     
             <!-- GitHub Social -->
-            <a href="https://github.com/bake0397" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="social github img-fluid p-1"></a>
+            <a href="https://github.com/bake0397" itemprop="url" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="social github img-fluid p-1"></a>
         </div>
       
         <p class="text-center my-5 mb-0 pb-3">&copy; Copyright Saxe Studio 2025</p>
     </div>
+    <a href="#top" class="skip-link text-black bg-transparent text-decoration-underline mt-3 p-2 visually-hidden-focusable" aria-label="Back to top">Back to top</a>
   </footer>
   <!-- Footer Closing -->
 

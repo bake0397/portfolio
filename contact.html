@@ -18,13 +18,13 @@
 <body>
     <!-- Header -->
     <header role="banner" itemscope itemtype="https://schema.org/ProfessionalService">
-        <div class="container-fluid">
+        <div class="container-fluid mt-1">
           <a class="navbar-brand" href="#" itemprop="url">
-            <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4" itemprop="logo">
+            <img src="./images/logo-header.svg" alt="" class="logo pt-2 pb-2 ps-4" itemprop="logo">
           </a>
-          <nav class="navbar navbar-expand-lg bg-success py-4 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
+          <nav class="navbar navbar-expand-lg bg-success py-2 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
             <div class="top-nav container-fluid d-flex justify-content-end">
-              <button class="navbar-toggler ms-0 border-0 position-absolute translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
+              <button class="navbar-toggler ms-0 border-0 translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,16 +37,16 @@
                 </svg>
                 <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end" role="menubar">
                   <li class="nav-item p-0">
-                    <a class="nav-link active link-dark px-5 offcanvas-color-light fs-4" aria-current="page" href="index.html" role="menuitem">Home</a>
+                    <a class="nav-link active link-dark px-5 offcanvas-color-light fs-5" aria-current="page" href="index.html" role="menuitem">Home</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link link-dark px-5 fs-4" href="about.html" role="menuitem">About Us</a>
+                    <a class="nav-link link-dark px-5 fs-5" href="about.html" role="menuitem">About Us</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link link-dark px-5 fs-4" href="#services" role="menuitem">Services</a>
+                    <a class="nav-link link-dark px-5 fs-5" href="#services" role="menuitem">Services</a>
                   </li>
                   <li class="nav-item p-0">
-                    <a class="nav-link link-dark px-5 fs-4" href="contact.html" role="menuitem">Contact</a>
+                    <a class="nav-link link-dark px-5 fs-5" href="contact.html" role="menuitem">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -105,10 +105,10 @@
 
         <section class="form-section" role="form" aria-label="Contact Form">
             <div class="contact-content container-fluid row pb-5">
-                <div class="col-6 mt-4 px-5">
-                    <h2 class="h2" role="heading" aria-level="1" aria-label="Bring Your Vision To Life" itemprop="about">Bring Your Vision To Life.
+                <div class="cont-info col mt-4 px-5">
+                    <h2 class="contact-head h2 p-3 fw-bold text-uppercase" role="heading" aria-level="1" aria-label="Bring Your Vision To Life" itemprop="about">Bring Your Vision To Life.
                     </h2>
-                    <p class="fs-5" itemprop="description">Have a project in mind? Whether you need branding, web design, photography, or social media magic, Saxe Studio is here to bring your vision to life. Drop a message, and let&apos;s make something unforgettable together!</p>
+                    <p class="project" itemprop="description">Have a project in mind? Whether you need branding, web design, photography, or social media magic, Saxe Studio is here to bring your vision to life. Drop a message, and let&apos;s make something unforgettable together!</p>
                     <div class="reciept-container d-flex p-0 m-0">
                         <img src="./images/reciept.png" alt="" class="reciept-one img-fluid w-50">
                         <img src="./images/reciept.png" alt="" class="reciept-two img-fluid w-50">
@@ -116,10 +116,10 @@
                     
                 </div>
                 <div class="form-bg col me-5">
-                    <form action="your-server-endpoint" method="POST" class="bg-success px-5 rounded-4 w-100" aria-labelledby="contact-form-title" role="form" itemscope itemtype="https://schema.org/ContactPage">
+                    <form action="your-server-endpoint" method="POST" class="form-field bg-success px-5 rounded-4 w-100" aria-labelledby="contact-form-title" role="form" itemscope itemtype="https://schema.org/ContactPage">
         
                         <fieldset class="w-100">
-                            <legend id="contact-form-title" itemprop="name" class="display-4 text-secondary text-center mt-4">Contact Us</legend>
+                            <legend id="contact-form-title" itemprop="name" class="display-4 text-secondary fw-bold text-center mt-4">Contact Us</legend>
         
                             <div class="row mt-5 d-flex justify-content-between gx-4">
                                 <!-- First Name -->
@@ -144,7 +144,7 @@
                             </div>
         
                             <!-- Message -->
-                            <div class="row form-group mt-4">
+                            <div class="mess row form-group mt-4">
                                 <label for="message" class="form-label text-black">Message</label>
                                 <textarea id="message" class="form-control resize-none border border-secondary border-4" name="message" required aria-required="true" rows="4" itemprop="description"></textarea>
                             </div>
@@ -306,55 +306,55 @@
     <!-- Main Closing -->
 
     <!-- Footer -->
-    <footer>
+    <footer class="d-flex" role="contentinfo">
         <div class="footer-cont container-fluid bg-success border-top border-secondary border-5">
             <div class="footer-items d-flex justify-content-center mt-5 mb-5">
                 
-                <nav class="foot-one d-flex align-items-end flex-shrink-1 pe-3" aria-label="Footer navigation">
+                <nav class="foot-one d-flex align-items-end flex-shrink-1 pe-3" aria-label="Footer navigation" role="navigation">
                     <ul class="foot-nav d-flex gap-4">
                         <li>
-                            <a href="index.html" class="nav-link d-flex fs-5 fs-md-4 fs-lg-3 text-black">Home</a>
+                            <a href="index.html" class="nav-link hvr-grow-shadow d-flex fs-5 fs-md-4 fs-lg-3 text-black">Home</a>
                         </li>
                         <li>
-                            <a href="about.html" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">About Us</a>
+                            <a href="about.html" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">About Us</a>
                         </li>
                     </ul>
                 </nav>
             
-                <img src="./images/footer-logo.svg" alt="Saxe Studio Logo" class="logo-foot w-25 justify-content-center d-flex m-0 img-fluid">
+                <img src="./images/footer-logo.svg" alt="Saxe Studio Logo" class="logo-foot w-25 justify-content-center d-flex m-0 img-fluid" itemprop="name" content="Saxe Studio">
     
-                <nav class="foot-two d-flex align-items-end flex-shrink-1 ps-3" aria-label="Footer navigation">
+                <nav class="foot-two d-flex align-items-end flex-shrink-1 ps-3" aria-label="Footer navigation" role="navigation">
                     <ul class="foot-nav d-flex gap-4">
                         <li>
-                            <a href="#services" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">Services</a>
+                            <a href="#services" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">Services</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">Contact</a>
+                            <a href="contact.html" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">Contact</a>
                         </li>
                     </ul>
                 </nav>
-            
             </div>
     
     
             <div class="social-icons container-sm d-flex justify-content-center mt-2 pt-5 border-top border-black border-1" aria-label="Social media links">
                 <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/taylor-baker-053123203/" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-icon.svg" alt="" class="social linkedin img-fluid p-1"></a>
+                <a href="https://www.linkedin.com/in/taylor-baker-053123203/" itemprop="url" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-icon.svg" alt="" class="social linkedin img-fluid p-1"></a>
         
                 <!-- Instagram Social -->
-                <a href="https://www.instagram.com/cherrylightstudio" aria-label="Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-icon.svg" alt="" class="social instagram img-fluid p-1"></a>
+                <a href="https://www.instagram.com/cherrylightstudio" itemprop="url" aria-label="Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-icon.svg" alt="" class="social instagram img-fluid p-1"></a>
         
         
                 <!-- YouTube Social -->
-                <a href="https://www.youtube.com/@bake0397" aria-label="YouTube (opens in new tab)" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@bake0397" itemprop="url" aria-label="YouTube (opens in new tab)" target="_blank" rel="noopener noreferrer">
                   <img src="./images/youtube-icon.svg" alt="" class="social youtube img-fluid p-1"></a>
         
                 <!-- GitHub Social -->
-                <a href="https://github.com/bake0397" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="social github img-fluid p-1"></a>
+                <a href="https://github.com/bake0397" itemprop="url" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="social github img-fluid p-1"></a>
             </div>
           
             <p class="text-center my-5 mb-0 pb-3">&copy; Copyright Saxe Studio 2025</p>
         </div>
+        <a href="#top" class="skip-link text-black bg-transparent text-decoration-underline mt-3 p-2 visually-hidden-focusable" aria-label="Back to top">Back to top</a>
       </footer>
     <!-- Footer Closing -->
 

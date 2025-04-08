@@ -15,13 +15,13 @@
 <body>
   <!-- Header -->
   <header role="banner" itemscope itemtype="https://schema.org/ProfessionalService">
-    <div class="container-fluid">
+    <div class="container-fluid mt-1">
       <a class="navbar-brand" href="#" itemprop="url">
-        <img src="./images/logo-header.svg" alt="" class="w-25 pt-5 pb-4 ps-4" itemprop="logo">
+        <img src="./images/logo-header.svg" alt="" class="logo pt-2 pb-2 ps-4" itemprop="logo">
       </a>
-      <nav class="navbar navbar-expand-lg bg-success py-4 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-success py-2 w-100" role="navigation" aria-label="Main navigation" data-bs-theme="dark">
         <div class="top-nav container-fluid d-flex justify-content-end">
-          <button class="navbar-toggler ms-0 border-0 position-absolute translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
+          <button class="navbar-toggler ms-0 border-0 translate-middle mb-5 bottom-0 top-5" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,16 +34,16 @@
             </svg>
             <ul class="navbar-nav ms-0 mb-2 mb-lg-0 w-100 justify-content-end" role="menubar">
               <li class="nav-item p-0">
-                <a class="nav-link active link-dark px-5 offcanvas-color-light fs-4" aria-current="page" href="index.html" role="menuitem">Home</a>
+                <a class="nav-link active link-dark px-5 offcanvas-color-light fs-5" aria-current="page" href="index.html" role="menuitem">Home</a>
               </li>
               <li class="nav-item p-0">
-                <a class="nav-link link-dark px-5 fs-4" href="about.html" role="menuitem">About Us</a>
+                <a class="nav-link link-dark px-5 fs-5" href="about.html" role="menuitem">About Us</a>
               </li>
               <li class="nav-item p-0">
-                <a class="nav-link link-dark px-5 fs-4" href="#services" role="menuitem">Services</a>
+                <a class="nav-link link-dark px-5 fs-5" href="#services" role="menuitem">Services</a>
               </li>
               <li class="nav-item p-0">
-                <a class="nav-link link-dark px-5 fs-4" href="contact.html" role="menuitem">Contact</a>
+                <a class="nav-link link-dark px-5 fs-5" href="contact.html" role="menuitem">Contact</a>
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@
 
     <section class="banner">
       <div class="container-fluid p-0 m-0">
-        <h1 class="about-title h1 d-flex text-center justify-content-center align-items-center text-uppercase" itemprop="name">About Us</h1>
+        <h1 class="about-title h1 fw-bold d-flex text-center justify-content-center align-items-center text-uppercase" itemprop="name">About Us</h1>
       </div>
     </section>
     
@@ -92,14 +92,13 @@
     <section class="taylor-bio">
       <div class="taylor container-fluid row">
         <div class="col p-5">
-          <h2 class="h2" itemprop="name">Hello! I'm Taylor Baker</h2>
-          <p itemprop="description">
+          <h2 class="h2 fw-bold text-uppercase" itemprop="name">Hello! I'm Taylor Baker</h2>
+          <p class="desc mt-5" itemprop="description">
             Taylor Baker is the founder and lead designer of 
             <span itemscope itemtype="https://schema.org/Organization" itemprop="worksFor">
-              <span itemprop="name">Saxe Studio</span>
-            </span>, a creative studio dedicated to bold, strategic, and story-driven design. With expertise in branding, web design, and marketing, Taylor helps businesses and creatives build identities that are authentic, impactful, and timeless. Her work blends visual storytelling with thoughtful design, ensuring every project connects with the right audience. Whether crafting a brand from the ground up or refining an existing identity, Taylor’s goal is to create work that stands out, resonates, and inspires others.
+            <span itemprop="name">Saxe Studio</span>
+            </span>, a creative studio dedicated to bold, strategic, and story-driven design. With expertise in branding, web design, and marketing, Taylor helps businesses and creatives build identities that are authentic, impactful, and timeless. Her work blends visual storytelling with thoughtful design, ensuring every project connects with the right audience. Whether crafting a brand from the ground up or refining an existing identity, Taylor&apos;s goal is to create work that stands out, resonates, and inspires others.
           </p>
-          <!-- <p itemprop="description">Taylor Baker is the founder and lead designer of Saxe Studio, a creative studio dedicated to bold, strategic, and story-driven design. With expertise in branding, web design, and marketing, Taylor helps businesses and creatives build identities that are authentic, impactful, and timeless. Her work blends visual storytelling with thoughtful design, ensuring every project connects with the right audience. Whether crafting a brand from the ground up or refining an existing identity, Taylor’s goal is to create work that stands out, resonates, and inspires others.</p> -->
         </div>
         
         <div class="col">
@@ -135,7 +134,7 @@
             srcset="
             ./images/taylor/taylor-baker_copy_kuhqy1_c_scale,w_705.png 705w"
             src="./images/taylor/taylor-baker_copy_kuhqy1_c_scale,w_705.png"
-            alt="" class="img-fluid p-4" itemprop="image">
+            alt="" class="me img-fluid" itemprop="image">
           </picture>
         </div>
         <div class="logo-banner img-fluid">
@@ -178,19 +177,32 @@
             srcset="
             ./images/poster/baker-taylor-poster_2_hkvnyj_c_scale,w_1100.jpg 1100w"
             src="./images/poster/baker-taylor-poster_2_hkvnyj_c_scale,w_1100.jpg"
-            alt="" class="poster img-fluid d-flex w-50">
+            alt="" class="poster img-fluid d-flex">
           </picture>
-          <!-- <img src="" alt=""> -->
         </div>
 
         <div class="mission col">
           <div>
-            <h2></h2>
+            <h2 class="visually-hidden" aria-label="Our Mission, Vision, and Values">Our Mission, Vision, and Values</h2>
           </div>
 
-          <div></div>
+          <div class="v-info d-flex bg-white rounded-5 border border-5 border-secondary align-items-center position-relative mt-3 me-4">
+            <h3 class="vision fw-bold text-uppercase text-secondary position-absolute top-0 start-0 mt-4 ms-5 ps-5 d-flex bg-white px-3 z-1">Creative Transparency</h3>
+            <img src="./images/create.svg" alt="" class="img-fluid ms-3">
+            <p class=" ps-5 pe-4 py-5 mt-3 me-4">Great design is a collaborative journey. We keep the process open, honest, and engaging, ensuring your vision shines through every step of the way.</p>
+          </div>
 
-          <div></div>
+          <div class="v-info d-flex bg-white rounded-5 border border-5 border-secondary align-items-center position-relative mt-3 me-4">
+            <h3 class="vision fw-bold text-uppercase text-secondary position-absolute top-0 start-0 mt-4 ms-5 ps-5 d-block bg-white px-3 z-1">Innovation</h3>
+            <img src="./images/innovate.svg" alt="" class="img-fluid ms-3">
+            <p class="ps-5 pe-4 py-5 mt-3">Creativity thrives on fresh ideas. We embrace new perspectives, experiment fearlessly, and craft unique solutions that set you apart.</p>
+          </div>
+
+          <div class="v-info d-flex bg-white rounded-5 border border-5 border-secondary align-items-center position-relative mt-3 me-4">
+            <h3 class="vision fw-bold text-uppercase text-secondary position-absolute top-0 start-0 mt-4 ps-5 d-flex bg-white px-3 z-1">Growth</h3>
+            <img src="./images/grow.svg" alt="" class="img-fluid ms-3">
+            <p class="ps-5 pe-4 py-5 mt-3">We believe in constant evolution—pushing boundaries, learning, and adapting to create impactful designs that grow alongside your brand.</p>
+          </div>
 
         </div>
 
@@ -202,30 +214,30 @@
    <!-- Main Closing -->
 
     <!-- Footer -->
-    <footer class="d-flex">
+    <footer class="d-flex" role="contentinfo">
       <div class="footer-cont container-fluid bg-success border-top border-secondary border-5">
           <div class="footer-items d-flex justify-content-center mt-5 mb-5">
               
-              <nav class="foot-one d-flex align-items-end flex-shrink-1 pe-3" aria-label="Footer navigation">
+              <nav class="foot-one d-flex align-items-end flex-shrink-1 pe-3" aria-label="Footer navigation" role="navigation">
                   <ul class="foot-nav d-flex gap-4">
                       <li>
-                          <a href="index.html" class="nav-link d-flex fs-5 fs-md-4 fs-lg-3 text-black">Home</a>
+                          <a href="index.html" class="nav-link hvr-grow-shadow d-flex fs-5 fs-md-4 fs-lg-3 text-black">Home</a>
                       </li>
                       <li>
-                          <a href="about.html" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">About Us</a>
+                          <a href="about.html" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">About Us</a>
                       </li>
                   </ul>
               </nav>
           
-              <img src="./images/footer-logo.svg" alt="Saxe Studio Logo" class="logo-foot w-25 justify-content-center d-flex m-0 img-fluid">
+              <img src="./images/footer-logo.svg" alt="Saxe Studio Logo" class="logo-foot w-25 justify-content-center d-flex m-0 img-fluid" itemprop="name" content="Saxe Studio">
   
-              <nav class="foot-two d-flex align-items-end flex-shrink-1 ps-3" aria-label="Footer navigation">
+              <nav class="foot-two d-flex align-items-end flex-shrink-1 ps-3" aria-label="Footer navigation" role="navigation">
                   <ul class="foot-nav d-flex gap-4">
                       <li>
-                          <a href="#services" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">Services</a>
+                          <a href="#services" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">Services</a>
                       </li>
                       <li>
-                          <a href="contact.html" class="nav-link fs-5 fs-md-4 fs-lg-3 text-black">Contact</a>
+                          <a href="contact.html" class="nav-link hvr-grow-shadow fs-5 fs-md-4 fs-lg-3 text-black">Contact</a>
                       </li>
                   </ul>
               </nav>
@@ -235,22 +247,23 @@
   
           <div class="social-icons container-sm d-flex justify-content-center mt-2 pt-5 border-top border-black border-1" aria-label="Social media links">
               <!-- LinkedIn -->
-              <a href="https://www.linkedin.com/in/taylor-baker-053123203/" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-icon.svg" alt="" class="social linkedin img-fluid p-1"></a>
+              <a href="https://www.linkedin.com/in/taylor-baker-053123203/" itemprop="url" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/linkedin-icon.svg" alt="" class="social linkedin img-fluid p-1"></a>
       
               <!-- Instagram Social -->
-              <a href="https://www.instagram.com/cherrylightstudio" aria-label="Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-icon.svg" alt="" class="social instagram img-fluid p-1"></a>
+              <a href="https://www.instagram.com/cherrylightstudio" itemprop="url" aria-label="Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/instagram-icon.svg" alt="" class="social instagram img-fluid p-1"></a>
       
       
               <!-- YouTube Social -->
-              <a href="https://www.youtube.com/@bake0397" aria-label="YouTube (opens in new tab)" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@bake0397" itemprop="url" aria-label="YouTube (opens in new tab)" target="_blank" rel="noopener noreferrer">
                 <img src="./images/youtube-icon.svg" alt="" class="social youtube img-fluid p-1"></a>
       
               <!-- GitHub Social -->
-              <a href="https://github.com/bake0397" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="social github img-fluid p-1"></a>
+              <a href="https://github.com/bake0397" itemprop="url" aria-label="GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer"><img src="./images/github-icon.svg" alt="" class="social github img-fluid p-1"></a>
           </div>
         
           <p class="text-center my-5 mb-0 pb-3">&copy; Copyright Saxe Studio 2025</p>
       </div>
+      <a href="#top" class="skip-link text-black bg-transparent text-decoration-underline mt-3 p-2 visually-hidden-focusable" aria-label="Back to top">Back to top</a>
     </footer>
     <!-- Footer Closing -->
 
