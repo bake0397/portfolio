@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-/* no */
-
-@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap'); 
-/* dont like */
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url("sliding_entrances/slideInUp.css");
@@ -103,11 +95,9 @@
 
 body {
     min-width: 100vw !important;
-    /* font-family: "Mitr", sans-serif; */
     font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     margin: 0;
-    /* width: 100%; */
     height: 100vh !important;
     box-sizing: border-box;
 }
@@ -117,8 +107,6 @@ h1, .h1 {
     font-size: clamp(1rem, calc(1rem + 2vw), 4rem);
     display: flex;
     flex-wrap: wrap;
-    /* font-size: 3rem; */
-    /* -webkit-text-stroke: 6px black; */
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -150,7 +138,6 @@ a {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     width: 100vw;
-    /* padding-top: 2rem !important; */   
 }
 
 .navbar-toggler-icon {
@@ -214,7 +201,6 @@ a {
     margin-left: 0 !important;
     min-width: 20% !important;
     max-width: 20% !important;
-    /* padding-top: 9rem !important; */
 }
 
 .navbar {
@@ -723,7 +709,6 @@ h3.vision {
         justify-content: space-between !important;
         align-items: center;
         width: 50%;
-        /* flex: 0; */
     }
 
     footer .nav-link {
